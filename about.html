@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="apple-touch-icon" type="image/png" href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - CSS Tip of the Day 17</title>
+<link rel="stylesheet" href="https://use.typekit.net/mtw8akb.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<style>
+::-moz-selection {
+  background-color: rgba(238, 99, 82,1);
+  color: white;
+}
+
+::selection {
+  background-color: rgba(238, 99, 82,1);
+  color: white;
+}
+
+/* =========================
+   GENERAL STYLES 
+   NOT RELATED TO THE TIP
+============================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {  
+  --clr-primary: #ee6352;
+  --clr-secondary: #d16e8d;
+  --clr-accent: #F7F7FF;
+  --clr-gradient: linear-gradient(-90deg, var(--clr-primary), var(--clr-secondary));
+  --ff-title: bungee, sans-serif;
+  --ff-body: canada-type-gibson,sans-serif;
+  --fw-body: 300;
+  --fw-bold: 800;
+  --fw-title: 400;
+  --fw-number: 800;
+}
+
+body {
+  min-height: 100vh;
+  font-family: var(--ff-body);
+  font-weight: var(--fw-body);
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover,
+a:focus {
+  color: var(--clr-accent);
+}
+
+:focus {
+  outline: 5px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+.title,
+.credits {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1em 0 2em;
+  margin: 0;
+  background: var(--clr-gradient);
+  position: relative;
+  z-index: 1000;
+}
+
+.title {
+  font-size: calc(1rem + 3vw);
+  font-family: var(--ff-title);
+  font-weight: var(--fw-title);
+  color: white;
+  text-shadow: 3px 5px 10px rgba(0,0,0, .2);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
+}
+
+.title span {
+    font-weight: var(--fw-number);
+    color: black;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    font-size: 5em;
+    top: -30%;
+    z-index: -1;
+    opacity: .25
+  }
+
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.credits {
+  font-family: var(--ff-title);
+  width: 100%;
+  margin: 0;
+  padding: 6em 0 1em;
+  -webkit-clip-path: polygon(0 60%, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 60%, 100% 0, 100% 100%, 0% 100%);
+  color: rgba(black, .7);
+}
+
+.credits p:last-child {
+  font-size: .8em;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body translate="no">
+<h1 class="title">About<span>17</span></h1>
+<div class="content">
+<p>When I made this, I was so happy! with the help of the creator of Venom Lite, we made it! It was awesome. When I made this, I was still learning line code, actually, this was my first ever! And with youtube having coppa, it will be easier to upload!</p>
+</div>
+<footer class="credits">
+<p></p>
+<p>Created by <a href="https://www.youtube.com/channel/UC4OHv5Fasgp15nsid14bZMQ?" target="_blank">Owen Hale</a></p>
+</footer>
+</body>
+</html>
